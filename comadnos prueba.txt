@@ -1,0 +1,52 @@
+Nuestras búsquedas:
+
+ver planes con sus actividades
+(puntuar usuario)
+listar planes por puntuacion de dueño
+filtrarPlnaesFecha
+
+
+
+create-user:P;123;15;15
+login:P;123
+create-plan:IrParaAlla;2000-10-10-10-10;Paris;1
+list-plans:date
+list-plans:puntuation
+join-plan:1
+view-my-plans
+undress-plan:1
+create-activity:Generica;Pa;5;5;5;pa
+add-activity-plan:1;1
+rate-plan:1;5.6
+view-my-plans-activities
+
+
+create-user:P;123;15;15
+create-user:P1;123;15;16
+create-user:P2;123;15;17
+create-user:P3;123;15;18
+rate-user:P1;6							//devería dar error
+login:P;123
+create-plan:PlanComun;2000-10-10-10-10;Paris;100  		//poner la fehca dentro de 2 o 3 minutos
+join-plan:1
+logout
+login:P1;123
+join-plan:1
+logout
+login:P2;123
+join-plan:1
+logout
+login:P3;123
+join-plan:1
+logout
+
+login:P;123
+rate-user:P1;6
+logout
+
+login:P1;123
+view-my-calification
+
+
+
+filter-plans-date:2000-01-01-01-01;4000-01-01-01-01
